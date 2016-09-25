@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="validation.js"></script>
+    <meta charset="utf-8">
+    <meta name="author" content="Жирнова">
+</head>
+<body>
+    <h2>Дополнить граматику правилами позволяющими получать сбалансированные цепочки с фигурными и квадратными скобками</h2><br>
+    C->CC|(C)|{C}|[C]|e;
+    <h2>Переделать код на JS</h2><br>
+    <input type="text" id="teststr" placeholder="введите цепочку">
+    <input type="submit" value="Проверить цепочку" onclick="validThisStr();">
+<script>
+    function validThisStr(){
+        var str=document.getElementById('teststr').value;
+        if (valid(str)) alert('Цепочка валидна!'); else alert('Цепочка не валидна!');
+    }
+</script>
+</body>
+</html>
